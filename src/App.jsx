@@ -11,7 +11,7 @@ function App() {
         <NavigationBar />
         <Routes>
           <Route path="/" element={<Dashboard />}></Route>
-          <Route path="/produk" element={<Product />}></Route>
+          <Route path="/product" element={<Product />}></Route>
         </Routes>
       </Router>
     </>
