@@ -2,7 +2,9 @@ function Footer() {
   return (
     <footer className="footer bg-gray-700 text-white items-center p-4 mt-10">
       <div className="flex justify-between items-center px-4 sm:px-10">
-        <div className="">© 2020 Your Company, Inc. All rights reserved.</div>
+        <div className="">
+          © 2024 Kedai Programmer, Inc. All rights reserved.
+        </div>
         <div className="grid grid-flow-col gap-4">
           <a href="https://www.instagram.com/kedai.programmer/">
             <svg
