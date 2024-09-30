@@ -1,7 +1,8 @@
 import { useState } from "react";
-import logoProduct from "../assets/icons/product.png";
-import logoHome from "../assets/icons/home.png";
-import logoAuth from "../assets/icons/auth.png";
+import logoProduct from "../../assets/icons/product.png";
+import logoHome from "../../assets/icons/home.png";
+import logoAuth from "../../assets/icons/auth.png";
+import LoginForm from "../../view/auth/Login";
 
 const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,7 +65,7 @@ const NavigationBar = () => {
             <span className="pt-1 text-xs">Product</span>
           </a>
 
-          <a href="" className="flex flex-col items-center">
+          <a href="/login" className="flex flex-col items-center">
             <img src={logoAuth} alt="auth" className="object-center h-6 w-6" />
             <span className="pt-1 text-xs">Login/Register</span>
           </a>
@@ -101,7 +102,7 @@ const NavigationBar = () => {
               <span className="pl-2 text-sm">Product</span>
             </a>
 
-            <a href="/login" className="flex items-center py-2">
+            <a href={<LoginForm />} className="flex items-center py-2">
               <img
                 src={logoAuth}
                 alt="auth"
